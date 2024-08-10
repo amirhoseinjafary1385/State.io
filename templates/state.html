@@ -6,13 +6,22 @@
     <title>*State.io*</title>
     <!--important link! | style.css-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- <link rel="icon" type="image/x-icon" href="Aipng.png"> -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Aipng.png') }}">
+    <!--BoxIcon-->
+    <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="search">
-        <input id="search" type="text" placeholder="Search-Something..." autocomplete="off">
+    <!-- BoxIcon -->
+    <div id="theme-toggle">
+        <i class="bx bx-moon" id="theme-icon"></i>
     </div>
+    
+    
+    <input id="search" type="text" placeholder="Search-Something..." autocomplete="off">
+    
     <div class="game1">
-        <h1>state.io | امیر حسین </h1>
+        <h1 class="intro">state.io | امیر حسین </h1>
         <a class="graph" href="https://github.com/amirhoseinjafary1385/" target="_blank"><p>About state.io</p></a>
         <canvas id="gameCanvas"></canvas>
     </div>
@@ -22,7 +31,7 @@
         <input type="text" id="first_name" name="first_name" required><br><br>
         <label for="last_name">Last Name:</label>
         <input type="text" id="last_name" name="last_name" required><br><br>
-        <input type="submit" value="Enter the Game">
+        <input id ="button" type="submit" value="Enter the query Name">
     </form>
     
     <div class="game2">
@@ -31,5 +40,6 @@
     
     <!--لینک دادن به فایل بسیار مهم ! | script.js-->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/theme.js') }}"></script>
 </body>
 </html>
