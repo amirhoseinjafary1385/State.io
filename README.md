@@ -4,6 +4,12 @@
 
 
 
+
+
+
+
+
+
 project_folder/
 │
 ├── static/
@@ -27,9 +33,21 @@ project_folder/
 
 
 
+
+
+
+
+
+
+
+
+
 بازی انحصاری به شیوه خودم.
 
 داخل phpmyadmin با wamp یا lamp یا host دیتابیس mysql را اجرا کرده و در داخل Sql query Box این فیلد هارا وارد میکنیم!:
+
+
+
 
 
 
@@ -52,6 +70,10 @@ CREATE TABLE users (
 
 
 
+
+
+
+-------------------------------------------------------------
 python -m venv venv
 
 
