@@ -91,3 +91,6 @@ pip install -r requirements.txt
 
 pip install Flask-MySQLdb
 
+
+pip install Flask
+
