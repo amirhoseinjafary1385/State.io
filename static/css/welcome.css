@@ -1,0 +1,12 @@
+body {
+    background-color: #515151;
+
+}
+.center-block {
+    text-align: center;   
+    background-color: #414141;
+}
+p, h1 {
+    color: #fff;
+    font-size: 50px;
+}
