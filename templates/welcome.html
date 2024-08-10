@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خوش</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>خوش آمدید</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/welcome.css') }}">
+    <!-- <link rel="icon" type="image/x-icon" href="Aipng.png"> -->
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='Aipng.png') }}">
+ 
 </head>
 <body>
+    <div class="center-block">
     <h1>خوش آمدید به State.io </h1>
-    <p>کاربر با اسم "{{ full_name }}" تشریف آوردید,قدم رنج فرموده اید!</p>
+    <p >کاربر با اسم "{{ full_name }}" تشریف آوردید,قدم رنج فرموده اید!</p>
+    </div>
 </body>
 </html>
