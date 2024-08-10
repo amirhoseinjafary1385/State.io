@@ -10,17 +10,34 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #ddd;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.4s ease;
+    background-color: #f1f1f1;
 }
-
+p{
+    text-align: center;
+}
 .game {
     font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     justify-content: center;
     display: inline-block;
 }
 
-h1 {
+.intro{
     text-align: center;
-    font-size: 40px;
+}
+#first_name, #last_name{
+    color: rgb(207, 228, 16);
+    background-color: gray;
+    text-align: center;
+    align-items: center;
+    height: 20px;
+    font-size: large;
+}
+#button {
+    color: rgb(17, 255, 17);
+
+    border: 4px solid #313131;
 }
 .graph {
     text-decoration: none;
@@ -28,23 +45,65 @@ h1 {
     color: green;
     font-size: 20px;
 }
+#theme-toggle{
+    position: fixed;  /*relative */
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #414141;
+    border-radius: 50%;
+    padding: 10PX;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4); /* Optional: shadow for better visibility */
+}
+.dark-mode #theme-toggle {
+    transform: rotate(180deg);
+}
+
 #search {
-    transition: width ease 0.4s, opacity ease 0.5s;
-    opacity: 1;
-    background: #f1f1f194;
-    border: none;
+    transition: width ease 0.7s, opacity ease 0.5s;
+    opacity: 2;
+    background: #f2f2f2;
+    border: 4px solid #898940;
     color: #212121;
-    padding: 8px 12px;
     margin-bottom: 0;
-    text-align: left;
-    top: 30px;
+    height: 30px;
+    top: 10px;
     position: fixed;
     width: 200px;
+    margin: auto;
 }
 #search:focus {
     width: 120px;
 
 }
+/* BoxIcone */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .game1 {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode input,
+body.dark-mode canvas {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+
+
 @media (min-width: 1024px) {
     input#search {
       right: max(100px, calc(100vw / 2 - 512px));
