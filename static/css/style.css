@@ -1,0 +1,52 @@
+#gameCanvas {
+    border: 2px dashed #313131;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ddd;
+}
+
+.game {
+    font-family: system-ui,'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: center;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.graph {
+    text-decoration: none;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+}
+#search {
+    transition: width ease 0.4s, opacity ease 0.5s;
+    opacity: 1;
+    background: #f1f1f194;
+    border: none;
+    color: #212121;
+    padding: 8px 12px;
+    margin-bottom: 0;
+    text-align: left;
+    top: 30px;
+    position: fixed;
+    width: 200px;
+}
+#search:focus {
+    width: 120px;
+
+}
+@media (min-width: 1024px) {
+    input#search {
+      right: max(100px, calc(100vw / 2 - 512px));
+    }
+  }

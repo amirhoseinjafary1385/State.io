@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*State.io*</title>
+    <!--important link! | style.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="search">
+        <input id="search" type="text" placeholder="Search-Something..." autocomplete="off">
+    </div>
+    <div class="game1">
+        <h1>state.io | امیر حسین </h1>
+        <a class="graph" href="https://github.com/amirhoseinjafary1385/" target="_blank"><p>About state.io</p></a>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <form action="/welcome" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        <input type="submit" value="Enter the Game">
+    </form>
+    
+    <div class="game2">
+        <!--Type Here!-->
+    </div>
+    
+    <!--لینک دادن به فایل بسیار مهم ! | script.js-->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
