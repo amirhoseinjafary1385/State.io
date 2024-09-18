@@ -10,6 +10,10 @@
 
 
 
+
+
+
+
 project_folder/
 │
 ├── static/
@@ -25,6 +29,11 @@ project_folder/
 │   └── welcome.html
 │
 └── main.py
+
+
+
+
+
 
 
 
